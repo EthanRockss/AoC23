@@ -1,0 +1,48 @@
+﻿  main.cpp
+C:\Users\ehunt\OneDrive\Documents\aoc23\d1\C2\clue2\main.cpp(11,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244:             _Ty=__int64
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244:         ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244:         and
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47): warning C4244:         ]
+  (compiling source file 'main.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(143,47):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\ehunt\OneDrive\Documents\aoc23\d1\C2\clue2\main.cpp(66,9):
+  	see reference to function template instantiation 'std::tuple<int,int>::tuple<int&,__int64,0>(_This2,__int64 &&) noexcept' being compiled
+          with
+          [
+              _This2=int &
+          ]
+  		C:\Users\ehunt\OneDrive\Documents\aoc23\d1\C2\clue2\main.cpp(66,7):
+  		see the first reference to 'std::tuple<int,int>::tuple' in 'first_of_word_int'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(361,16):
+  	see reference to function template instantiation 'std::tuple<int,int>::tuple<std::_Exact_args_t,int&,_Ty,0>(_Tag,_This2,_Ty &&)' being compiled
+          with
+          [
+              _Ty=__int64,
+              _Tag=std::_Exact_args_t,
+              _This2=int &
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(315,18):
+  	see reference to function template instantiation 'std::tuple<int>::tuple<std::_Exact_args_t,_Ty,,0>(_Tag,_This2 &&)' being compiled
+          with
+          [
+              _Ty=__int64,
+              _Tag=std::_Exact_args_t,
+              _This2=__int64
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\tuple(315,102):
+  	see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=int,
+              _Ty=__int64,
+              _Other=__int64
+          ]
+  
+  clue2.vcxproj -> C:\Users\ehunt\OneDrive\Documents\aoc23\d1\C2\x64\Debug\clue2.exe

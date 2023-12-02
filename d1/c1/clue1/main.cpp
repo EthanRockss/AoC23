@@ -29,23 +29,30 @@ int main()
 	std::ifstream input("input.txt");
 	std::string line;
 
+	int result, total;
+	total = 0;
+
 	while (getline(input, line))
 	{
 		if (line.length() < 1) continue;
 
 		std::vector<int> ascii_nums = every_num(line);
+		std::size_t ascii_size = ascii_nums.size();
 
-		if (ascii_nums.size() == 1)
-		{
-			int first = ascii_nums[0] - 48;
-			int result = concatenate(first, first);
-		}
-		else
-		{
-			int first = ascii_nums[0] - 48;
-			int second = ascii_nums[1] - 48;
-			int result = concatenate(first, second);
-		}
-		int total = total + result;
+		if (ascii_size == 0) continue;
+		
+		int first, last;
+		first = last = ascii_nums[0] - 48;
+
+		if (ascii_nums.size() > 1) last = ascii_nums[ascii_nums.size() - 1] - 48;
+
+		result = concatenate(first, last);
+
+		total = total + result;
+		std::cout << "First: " << first << '\n';
+		std::cout << "Second: " << last << '\n';
+		std::cout << "Result: " << result << '\n';
+		std::cout << "Total: " << total << '\n' << '\n';
 	}
+	
 }
